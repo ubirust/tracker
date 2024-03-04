@@ -25,4 +25,6 @@ urlpatterns = [
     path('', views.IndexView.as_view(), name="index"),
     path('delete/<int:id>/', views.DeleteView.as_view(), name="delete"),
     path('delete_consumed_food/<int:pk>/', views.delete_consumed_food, name='delete_consumed_food'),
+    path('test/', views.test, name='index'),
+    path('delete_task/<int:task_id>/', views.delete_task, name='delete_task'),
 ]

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7f12a2-22a6-475d-9de2-bf9500afbe65" name="Changes" comment="Доработал новую модель в models.py">
+    <list default="true" id="ca7f12a2-22a6-475d-9de2-bf9500afbe65" name="Changes" comment="Изменил index.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracker_django/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracker_django/food_consuming/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/food_consuming/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracker_django/food_consuming/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/food_consuming/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracker_django/tracker_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/tracker_django/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracker_django/tracker_django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/tracker_django/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +93,11 @@
       <workItem from="1709379230565" duration="9434000" />
       <workItem from="1709450671976" duration="1855000" />
       <workItem from="1709481284374" duration="6751000" />
-      <workItem from="1709539058676" duration="6327000" />
+      <workItem from="1709539058676" duration="10863000" />
+      <workItem from="1709550739243" duration="788000" />
+      <workItem from="1709551538430" duration="117000" />
+      <workItem from="1709551669006" duration="2608000" />
+      <workItem from="1709555619311" duration="1038000" />
     </task>
     <task id="LOCAL-00001" summary="Начальная версия">
       <option name="closed" value="true" />
@@ -136,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709486209443</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Изменил index.html">
+      <option name="closed" value="true" />
+      <created>1709545575670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709545575670</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +158,7 @@
     <MESSAGE value="Добавил models, urls" />
     <MESSAGE value="Доработал delete.html, index.html" />
     <MESSAGE value="Доработал новую модель в models.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доработал новую модель в models.py" />
+    <MESSAGE value="Изменил index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменил index.html" />
   </component>
 </project>

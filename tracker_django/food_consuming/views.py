@@ -1,6 +1,6 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.decorators.http import require_POST
+from django.views.decorators.http import require_POST, require_http_methods
 from django.views.generic import TemplateView
 
 from food_consuming.models import Food, Consume, Exercise, ExerciseLog
@@ -58,7 +58,7 @@ class DeleteView(TemplateView):
 
 
 
-@require_POST
+@require_http_methods(["POST", "DELETE"])
 def delete_consumed_food(request, pk):
     print('Я здесь')
     if not request.htmx:
@@ -68,3 +68,23 @@ def delete_consumed_food(request, pk):
     consumed_food.delete()
 
     return HttpResponse('')
+
+
+tasks = [
+        {'id': 1, 'name': 'Task 1'},
+        {'id': 2, 'name': 'Task 2'},
+        {'id': 3, 'name': 'Task 3'},
+    ]
+def test(request):
+
+    return render(request, 'test.html', {'tasks': tasks})
+
+def delete_task(request, task_id):
+    # Удалить task_id из списка задач
+    for task in tasks:
+        if task['id'] == task_id:
+            tasks.remove(task)
+            break
+    print(tasks)
+
+    return render(request, 'test.html', {'tasks': tasks})
