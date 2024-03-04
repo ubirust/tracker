@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7f12a2-22a6-475d-9de2-bf9500afbe65" name="Changes" comment="Доработал delete.html, index.html">
+    <list default="true" id="ca7f12a2-22a6-475d-9de2-bf9500afbe65" name="Changes" comment="Доработал новую модель в models.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracker_django/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracker_django/food_consuming/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/food_consuming/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracker_django/food_consuming/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/food_consuming/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracker_django/food_consuming/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/food_consuming/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracker_django/food_consuming/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/food_consuming/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracker_django/tracker_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/tracker_django/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracker_django/tracker_django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracker_django/tracker_django/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,8 @@
       <updated>1709379223423</updated>
       <workItem from="1709379230565" duration="9434000" />
       <workItem from="1709450671976" duration="1855000" />
-      <workItem from="1709481284374" duration="4806000" />
+      <workItem from="1709481284374" duration="6751000" />
+      <workItem from="1709539058676" duration="6327000" />
     </task>
     <task id="LOCAL-00001" summary="Начальная версия">
       <option name="closed" value="true" />
@@ -127,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709481893237</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Доработал новую модель в models.py">
+      <option name="closed" value="true" />
+      <created>1709486209443</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709486209443</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +146,7 @@
     <MESSAGE value="Начальная версия" />
     <MESSAGE value="Добавил models, urls" />
     <MESSAGE value="Доработал delete.html, index.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доработал delete.html, index.html" />
+    <MESSAGE value="Доработал новую модель в models.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доработал новую модель в models.py" />
   </component>
 </project>

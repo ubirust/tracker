@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from django.shortcuts import render, redirect, get_object_or_404
+from django.views.decorators.http import require_POST
 from django.views.generic import TemplateView
 
 from food_consuming.models import Food, Consume, Exercise, ExerciseLog
@@ -33,6 +35,11 @@ class IndexView(TemplateView):
             exercise_log = ExerciseLog(user=user, exercise=exercise)
             exercise_log.save()
 
+        if 'delete' in request.POST:
+            consumed_food_id = request.POST['delete']
+            consumed_food = Consume.objects.get(id=consumed_food_id)
+            consumed_food.delete()
+
         return redirect('/')
 
 
@@ -50,3 +57,14 @@ class DeleteView(TemplateView):
         return redirect('/')
 
 
+
+@require_POST
+def delete_consumed_food(request, pk):
+    print('Я здесь')
+    if not request.htmx:
+        return HttpResponse(status=400)
+
+    consumed_food = get_object_or_404(Consume, pk=pk)
+    consumed_food.delete()
+
+    return HttpResponse('')
